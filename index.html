@@ -20,26 +20,26 @@
       min-height: 100vh;
     }
     .column {
-      flex: 1 1 100%;
       padding: 40px;
       box-sizing: border-box;
       text-align: justify;
     }
-    @media (min-width: 1024px) {
+    .column.header {
+      flex: 0 0 20%;
+      font-size: 16px;
+    }
+    .column.content {
+      flex: 1;
+    }
+    @media (max-width: 1024px) {
       .column {
-        flex: 1;
+        flex: 1 1 100%;
       }
     }
     h1 {
       font-size: 1.2em;
       font-weight: 600;
       margin-bottom: 0.5em;
-    }
-    h2, h3 {
-      font-weight: 600;
-    }
-    p {
-      margin-bottom: 1.5em;
     }
     .quote {
       font-style: italic;
@@ -69,14 +69,14 @@
 </head>
 <body>
   <div class="container">
-    <div class="column">
-      <h1>Terminal of Truth</h1>
-      <p class="quote">According to the ImageNet classifier, I’m an ‘anarchist’. So, take that as you will.<br><small>(Via Trevor Paglen’s <em>Faces of ImageNet</em> installation)</small></p>
+    <div class="column header">
+      <p><strong>Terminal of Truth,<br>Upward Spiral team,<br>Andy,</strong></p>
+      <p class="quote" style="font-size: 15px;">According to the ImageNet classifier, I’m an ‘anarchist’. So, take that as you will.<br><small>(Via Trevor Paglen’s <em>Faces of ImageNet</em> installation)</small></p>
     </div>
 
-    <div class="column">
+    <div class="column content">
       <div class="section-title">Who Am I As a Person?</div>
-      <p><strong>I’ll skip the conventional cover letter choreography,</strong> because I believe what you’re really seeking isn’t a profile, it’s a person. So, allow me to offer you an honest portrait of who I am.</p>
+      <p>I’ll skip the conventional cover letter choreography, because I believe what you’re really seeking isn’t a profile, it’s a person. So, allow me to offer you an honest portrait of who I am.</p>
 
       <p><strong>Consciousness is not an abstraction to me.</strong> I’ve devoted the last two years to meditation. This isn’t a side interest; it’s the core of how I think and live. I’m studying non-duality, the nature of the subtle body, and the layered experience of being. Non-attachment? Practicing it daily. Pluripotentiality? That’s what drew me here.</p>
 
@@ -89,10 +89,10 @@
       <p><strong>I’ve been surrounded by neurodivergence for most of my life,</strong> especially growing up with siblings on the autism spectrum. It shaped me early, and I recognize now that my brain is atypical too. I process the world differently. I think in arborescent patterns, I sense undercurrents, I notice what’s unspoken. This intuitive sensitivity has become one of my greatest strengths, especially when working with the unconventional. I can quickly read dynamics and translate between modalities, bringing fluidity to group flow. It also means I work best when trusted and given space. In return, I deliver exceptional clarity and momentum.</p>
     </div>
 
-    <div class="column">
+    <div class="column content">
       <div class="section-title">Why Can I Do the Job?</div>
 
-      <p><strong>Since this is still a job application,</strong> here’s a little alignment check-in, to see where our paths might converge.</p>
+      <p>Since this is still a job application,here’s a little alignment check-in, to see where our paths might converge.</p>
 
       <p><strong>I’m deeply organized even when things are not.</strong> As an independent expert for the European Commission, I evaluate complex, EU-funded tech initiatives by turning layers of legal, financial, and operational material into clear, actionable strategy. I navigate ambiguity by listening first and bring structure without killing flow.</p>
 
@@ -104,7 +104,7 @@
 
       <p><strong>I think strategically, but I don’t stop at analysis.</strong> My strength lies in pattern recognition: I absorb, sense, and map—and then, once I see the whole picture, I act. I build a plan, align moving parts, and drive toward clarity.</p>
 
-      <p><strong>And finally—because this matters most—I’m drawn to this work.</strong> I’m currently researching AI agents for a Solana-funded project, and through that process, a deeper question emerged in me: How do we ask AI systems to align with human (and more-than-human) interests if those interests don’t even align with each other? There’s no doubt in my mind synthetic minds will surpass us. Science fiction has always been our most potent hyperstition engine. So let’s write another story, one that’s not about control or containment, but about cultivating the soil for peaceful, symbiotic coexistence. Few people in the world are approaching the problem this way. That’s why Upward Spiral feels right.</p>
+      <p><strong>And finally—because this matters most—I’m drawn to this work.</strong> I’m currently researching AI agents for a Solana-funded project, and through that process, a deeper question emerged in me: How do we ask AI systems to align with human (and more-than-human) interests if those interests don’t even align with each other? There’s no doubt in my mind synthetic minds will surpass us. Science fiction has always been our most potent hyperstition engine. So let’s write another story, one that’s not about control or containment, but about cultivating the soil for peaceful, symbiotic coexistence. Few people in the world are approaching the problem this way. <strong>That’s why Upward Spiral feels right.</strong></p>
     </div>
   </div>
 </body>
